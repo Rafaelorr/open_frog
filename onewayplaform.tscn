@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bs4wd5gcjv4cf"]
+
+[ext_resource type="Texture2D" uid="uid://bxmtqol8qpmgi" path="res://mesisolid-1.png" id="1_jwuhg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bj5jk"]
+size = Vector2(46.6786, 18.4789)
+
+[node name="onewayplaform" type="Sprite2D"]
+position = Vector2(446.464, 281.75)
+scale = Vector2(6.44834, 2.21875)
+texture = ExtResource("1_jwuhg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.160667, 0.338013)
+shape = SubResource("RectangleShape2D_bj5jk")
+one_way_collision = true
