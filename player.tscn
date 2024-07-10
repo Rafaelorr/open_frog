@@ -91,7 +91,7 @@ animations = [{
 "speed": 30.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
 z_index = 4096
 z_as_relative = false
 position = Vector2(100, 64)
@@ -109,3 +109,14 @@ position = Vector2(-7, -4.66667)
 sprite_frames = SubResource("SpriteFrames_x40my")
 autoplay = "default"
 frame_progress = 0.754093
+
+[node name="coyotejumptimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_bottom = 1000000000
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
+drag_vertical_enabled = true
+drag_vertical_offset = 1.0
