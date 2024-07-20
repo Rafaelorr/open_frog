@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://us83hbjiihe7"]
+
+[ext_resource type="Texture2D" uid="uid://dnl3yr8ok1ld2" path="res://Idle.png" id="1_fvjrm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wep5k"]
+size = Vector2(46, 20)
+
+[node name="spike" type="Node2D"]
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(1, 0)
+scale = Vector2(3, 2.25)
+texture = ExtResource("1_fvjrm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 10)
+shape = SubResource("RectangleShape2D_wep5k")
