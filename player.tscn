@@ -3,8 +3,9 @@
 [ext_resource type="Script" path="res://player.gd" id="1_p1mlu"]
 [ext_resource type="Texture2D" uid="uid://gj7p37e825ep" path="res://Idle (32x32).png" id="2_i67c3"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_oohpt"]
-size = Vector2(23, 24)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0a1tv"]
+radius = 12.0
+height = 24.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ep1bq"]
 atlas = ExtResource("2_i67c3")
@@ -101,7 +102,7 @@ script = ExtResource("1_p1mlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-7.5, -0.666666)
-shape = SubResource("RectangleShape2D_oohpt")
+shape = SubResource("CapsuleShape2D_0a1tv")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
