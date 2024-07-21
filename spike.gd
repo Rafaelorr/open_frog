@@ -3,7 +3,7 @@ extends Node2D
 var player_in_area = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if player_in_area:
 		#TODO: voeg game over systeem toe
 		wait(3)
