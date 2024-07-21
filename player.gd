@@ -38,10 +38,9 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	if $Sprite2D.global_position[1] > 3400.0:
-		#TODO: voeg game over systeem toe
-		get_tree().quit(3)
+		get_tree().change_scene_to_file("res://game_over.tscn")
 	elif Input.is_action_just_pressed("stop"):
-		get_tree().quit(3)
+		get_tree().change_scene_to_file("res://game_over.tscn")
 
 func player():
 	pass
