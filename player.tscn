@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://player.gd" id="1_p1mlu"]
 [ext_resource type="Texture2D" uid="uid://gj7p37e825ep" path="res://Idle (32x32).png" id="2_i67c3"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j87hc"]
-height = 26.3333
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oohpt"]
+size = Vector2(23, 24.1666)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ep1bq"]
 atlas = ExtResource("2_i67c3")
@@ -100,8 +100,8 @@ slide_on_ceiling = false
 script = ExtResource("1_p1mlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-6.66667, -2.83333)
-shape = SubResource("CapsuleShape2D_j87hc")
+position = Vector2(-7.5, -0.74999)
+shape = SubResource("RectangleShape2D_oohpt")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
