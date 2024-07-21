@@ -6,14 +6,15 @@
 size = Vector2(46.8337, 15.7746)
 
 [node name="onewayplaform" type="Sprite2D"]
+texture_filter = 1
 position = Vector2(446.464, 281.75)
 scale = Vector2(6.44834, 2.21875)
 texture = ExtResource("1_jwuhg")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+texture_filter = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(0.083107, 0.338028)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_bj5jk")
 one_way_collision = true
