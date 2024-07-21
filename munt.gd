@@ -3,7 +3,7 @@ extends Node2D
 var state = "no_munt" # no_munt, munt
 var player_in_area = false
 
-func _process(delta):
+func _process(_delta):
 	if state == "munt":
 		if player_in_area:
 			pass
