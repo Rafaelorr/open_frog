@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://gj7p37e825ep" path="res://Idle (32x32).png" id="2_i67c3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oohpt"]
-size = Vector2(23, 24.1666)
+size = Vector2(23, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ep1bq"]
 atlas = ExtResource("2_i67c3")
@@ -100,7 +100,7 @@ slide_on_ceiling = false
 script = ExtResource("1_p1mlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-7.5, -0.74999)
+position = Vector2(-7.5, -0.666666)
 shape = SubResource("RectangleShape2D_oohpt")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
@@ -120,6 +120,7 @@ limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
 drag_vertical_enabled = true
+drag_horizontal_offset = 1.0
 drag_vertical_offset = 1.0
-drag_left_margin = 0.5
-drag_right_margin = 0.3
+drag_left_margin = 0.02
+drag_right_margin = 1.0
