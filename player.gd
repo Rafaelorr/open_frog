@@ -1,3 +1,4 @@
+class_name speler
 extends CharacterBody2D
 
 const SPEED :float = 300.0
@@ -40,7 +41,11 @@ func _physics_process(delta):
 	if $Sprite2D.global_position[1] > 3400.0:
 		get_tree().change_scene_to_file("res://game_over.tscn")
 	elif Input.is_action_just_pressed("stop"):
-		get_tree().change_scene_to_file("res://game_over.tscn")
+		get_tree().quit(3)
 
 func player():
 	pass
+
+func spring(power: float, direction: float) -> void:
+	velocity.x = velocity.x - cos(direction) * power
+	velocity.y = -sin(direction) * power
