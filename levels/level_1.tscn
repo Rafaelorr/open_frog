@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://o5qrxccwka62"]
+[gd_scene load_steps=9 format=3 uid="uid://o5qrxccwka62"]
 
 [ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set.tscn" id="2_a3vj7"]
 [ext_resource type="PackedScene" uid="uid://d3fpy0d3vhx5m" path="res://player.tscn" id="3_52gqh"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://puxttfdsnrx4" path="res://door.tscn" id="6_cvd2j"]
 [ext_resource type="PackedScene" uid="uid://b8eqcu50kco4u" path="res://munt.tscn" id="6_g43ae"]
 [ext_resource type="PackedScene" uid="uid://us83hbjiihe7" path="res://spike.tscn" id="7_a33es"]
+[ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://munt_counter.tscn" id="8_h48wp"]
 
 [node name="level_1" type="Node"]
 metadata/_edit_vertical_guides_ = [-3735.0]
@@ -27,7 +28,7 @@ position = Vector2(1723, 623)
 position = Vector2(1249, 625)
 
 [node name="door" parent="." instance=ExtResource("6_cvd2j")]
-position = Vector2(3299, 107)
+position = Vector2(3300, 107)
 connected_scene_file_path = "level_2"
 
 [node name="level_1_onewayplaforms" type="Node" parent="."]
@@ -194,3 +195,9 @@ position = Vector2(2658.48, 1277.92)
 
 [node name="spike32" parent="level_1_spikes" instance=ExtResource("7_a33es")]
 position = Vector2(2611.73, 1277)
+
+[node name="munt_counter" parent="." instance=ExtResource("8_h48wp")]
+offset_left = 424.0
+offset_top = 263.0
+offset_right = 464.0
+offset_bottom = 286.0
