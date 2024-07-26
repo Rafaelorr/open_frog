@@ -1,13 +1,12 @@
 class_name speler
 extends CharacterBody2D
 
-const SPEED :float = 300.0
-const JUMP_VELOCITY :float = -600.0
+@export var SPEED :float = 300.0
+@export var JUMP_VELOCITY :float = -600.0
 var double_jump :int = 0
-@export var speler_aantal_munten = 0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+@export var gravity :float = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _physics_process(delta):
 	if velocity.x > 0:
