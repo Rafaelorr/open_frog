@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://door.gd" id="2_ga4sa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y2pgi"]
-size = Vector2(133, 142)
+size = Vector2(122, 142)
 
 [node name="door" type="Area2D"]
 script = ExtResource("2_ga4sa")
@@ -15,7 +15,7 @@ scale = Vector2(0.319583, 0.225208)
 texture = ExtResource("1_fw60y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(6.5, -16)
+position = Vector2(1, -16)
 shape = SubResource("RectangleShape2D_y2pgi")
 debug_color = Color(0.736085, 0, 0.340091, 0.42)
 
