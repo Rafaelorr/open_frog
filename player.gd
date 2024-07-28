@@ -3,10 +3,11 @@ extends CharacterBody2D
 
 @export var SPEED :float = 300.0
 @export var JUMP_VELOCITY :float = -600.0
+@export var slow_fall : bool = false
 var double_jump :int = 0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-@export var gravity :float = ProjectSettings.get_setting("physics/2d/default_gravity")
+@export var gravity :float = 980.0
 
 func _physics_process(delta):
 	if velocity.x > 0:
@@ -34,7 +35,11 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	
+	if slow_fall:
+		if velocity.y > 200.0:
+			velocity.y = 200.0
+	
 	move_and_slide()
 	
 	if $Sprite2D.global_position[1] > 3400.0:

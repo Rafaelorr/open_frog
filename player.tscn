@@ -117,11 +117,10 @@ one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_bottom = 1000000000
-limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
 drag_vertical_enabled = true
 drag_horizontal_offset = 1.0
-drag_vertical_offset = 1.0
+drag_vertical_offset = 0.01
 drag_left_margin = 0.02
 drag_right_margin = 1.0
