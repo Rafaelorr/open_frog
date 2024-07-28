@@ -197,7 +197,3 @@ position = Vector2(2658.48, 1277.92)
 position = Vector2(2611.73, 1277)
 
 [node name="munt_counter" parent="." instance=ExtResource("8_h48wp")]
-offset_left = 424.0
-offset_top = 263.0
-offset_right = 464.0
-offset_bottom = 286.0
