@@ -6,24 +6,24 @@
 script = ExtResource("1_y5guy")
 
 [node name="Game_titel" type="Label" parent="."]
-offset_left = 541.0
-offset_top = 165.0
-offset_right = 1360.0
-offset_bottom = 242.0
+offset_left = 539.0
+offset_top = 277.0
+offset_right = 1358.0
+offset_bottom = 354.0
 text = "Frog jump"
 
 [node name="start_button" type="Button" parent="."]
-offset_left = 747.0
-offset_top = 314.0
-offset_right = 848.0
-offset_bottom = 345.0
+offset_left = 754.0
+offset_top = 412.0
+offset_right = 855.0
+offset_bottom = 443.0
 text = "Start"
 
 [node name="controlles_button" type="Button" parent="."]
-offset_left = 385.0
-offset_top = 313.0
-offset_right = 473.0
-offset_bottom = 347.0
+offset_left = 392.0
+offset_top = 411.0
+offset_right = 480.0
+offset_bottom = 445.0
 text = "Controlles"
 
 [connection signal="pressed" from="start_button" to="." method="_on_button_pressed"]
