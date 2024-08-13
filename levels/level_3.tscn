@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://dre2w5cpxgf4m"]
+[gd_scene load_steps=8 format=3 uid="uid://dre2w5cpxgf4m"]
 
 [ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set.tscn" id="1_xui2f"]
 [ext_resource type="PackedScene" uid="uid://d3fpy0d3vhx5m" path="res://player.tscn" id="2_tg3rn"]
 [ext_resource type="PackedScene" uid="uid://dwi8srugdspdy" path="res://spring_veer.tscn" id="3_terhp"]
 [ext_resource type="PackedScene" uid="uid://us83hbjiihe7" path="res://spike.tscn" id="4_jbl8g"]
 [ext_resource type="PackedScene" uid="uid://puxttfdsnrx4" path="res://door.tscn" id="5_iie75"]
+[ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://munt_counter.tscn" id="6_uu6it"]
+[ext_resource type="PackedScene" uid="uid://b0c7uasfnhqlr" path="res://sleutel_counter.tscn" id="7_bf80o"]
 
 [node name="level_3" type="Node2D"]
 
@@ -281,3 +283,7 @@ position = Vector2(7192, 1149)
 [node name="door" parent="." instance=ExtResource("5_iie75")]
 position = Vector2(7921, 575)
 connected_scene_file_path = "level_4"
+
+[node name="munt_counter" parent="." instance=ExtResource("6_uu6it")]
+
+[node name="sleutel_counter" parent="." instance=ExtResource("7_bf80o")]
