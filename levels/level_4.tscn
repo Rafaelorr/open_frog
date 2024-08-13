@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cfbqc0gn8fc1m"]
+[gd_scene load_steps=9 format=3 uid="uid://cfbqc0gn8fc1m"]
 
 [ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set.tscn" id="1_6hy12"]
 [ext_resource type="PackedScene" uid="uid://d3fpy0d3vhx5m" path="res://player.tscn" id="2_bj7an"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://us83hbjiihe7" path="res://spike.tscn" id="4_ha02k"]
 [ext_resource type="PackedScene" uid="uid://bs4wd5gcjv4cf" path="res://onewayplaform.tscn" id="5_25ka4"]
 [ext_resource type="PackedScene" uid="uid://puxttfdsnrx4" path="res://door.tscn" id="6_0iwo4"]
+[ext_resource type="PackedScene" uid="uid://b0c7uasfnhqlr" path="res://sleutel_counter.tscn" id="7_x1tyv"]
+[ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://munt_counter.tscn" id="8_lj0pw"]
 
 [node name="level_4" type="Node2D"]
 
@@ -266,3 +268,7 @@ scale = Vector2(24.4468, 3.75)
 [node name="door" parent="." instance=ExtResource("6_0iwo4")]
 position = Vector2(5485, -356)
 connected_scene_file_path = "level_5"
+
+[node name="sleutel_counter" parent="." instance=ExtResource("7_x1tyv")]
+
+[node name="munt_counter" parent="." instance=ExtResource("8_lj0pw")]
