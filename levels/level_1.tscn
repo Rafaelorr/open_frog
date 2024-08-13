@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://o5qrxccwka62"]
+[gd_scene load_steps=10 format=3 uid="uid://o5qrxccwka62"]
 
 [ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set.tscn" id="2_a3vj7"]
 [ext_resource type="PackedScene" uid="uid://d3fpy0d3vhx5m" path="res://player.tscn" id="3_52gqh"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b8eqcu50kco4u" path="res://munt.tscn" id="6_g43ae"]
 [ext_resource type="PackedScene" uid="uid://us83hbjiihe7" path="res://spike.tscn" id="7_a33es"]
 [ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://munt_counter.tscn" id="8_h48wp"]
+[ext_resource type="PackedScene" uid="uid://b0c7uasfnhqlr" path="res://sleutel_counter.tscn" id="9_2trof"]
 
 [node name="level_1" type="Node"]
 metadata/_edit_vertical_guides_ = [-3735.0]
@@ -15,7 +16,7 @@ metadata/_edit_horizontal_guides_ = [-387.0]
 
 [node name="player" parent="." instance=ExtResource("3_52gqh")]
 z_index = 2000
-position = Vector2(78, 535)
+position = Vector2(318, 586)
 
 [node name="TileMap" parent="." instance=ExtResource("2_a3vj7")]
 position = Vector2(0, 0)
@@ -197,3 +198,5 @@ position = Vector2(2658.48, 1277.92)
 position = Vector2(2611.73, 1277)
 
 [node name="munt_counter" parent="." instance=ExtResource("8_h48wp")]
+
+[node name="sleutel_counter" parent="." instance=ExtResource("9_2trof")]
