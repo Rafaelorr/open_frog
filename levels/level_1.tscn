@@ -16,7 +16,7 @@ metadata/_edit_horizontal_guides_ = [-387.0]
 
 [node name="player" parent="." instance=ExtResource("3_52gqh")]
 z_index = 2000
-position = Vector2(318, 586)
+position = Vector2(293, 487)
 
 [node name="TileMap" parent="." instance=ExtResource("2_a3vj7")]
 position = Vector2(0, 0)
