@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2v3not27ebvs"]
+
+[ext_resource type="Script" path="res://menu/menu_scripts/controlles.gd" id="1_lkr43"]
+
+[node name="Controlles" type="Node2D"]
+script = ExtResource("1_lkr43")
+
+[node name="terug_knop" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Terug"
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = 256.0
+offset_top = 170.0
+offset_right = 296.0
+offset_bottom = 193.0
+text = "Om te springen druk je op:
+spatie of pijl hoog"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 258.0
+offset_top = 239.0
+offset_right = 298.0
+offset_bottom = 262.0
+text = "Om naar links te gaan druk je op:
+pijl links"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 254.0
+offset_top = 309.0
+offset_right = 515.0
+offset_bottom = 358.0
+text = "Om naar rechts te gaan druk je op:
+pijl rechts"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 254.0
+offset_top = 364.0
+offset_right = 440.0
+offset_bottom = 387.0
+text = "Om de game te stoppen druk je op:
+esc of crtl + c"
+
+[connection signal="pressed" from="terug_knop" to="." method="_on_button_pressed"]
