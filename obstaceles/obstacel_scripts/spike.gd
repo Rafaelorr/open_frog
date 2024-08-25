@@ -5,7 +5,7 @@ var player_in_area = false
 func _process(_delta):
 	if player_in_area:
 		wait(3)
-		get_tree().change_scene_to_file("res://game_over.tscn")
+		get_tree().change_scene_to_file("res://menu/menu_scenes/game_over.tscn")
 
 func _on_area_2d_body_entered(body):
 	if body.has_method("player"):
