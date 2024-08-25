@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwi8srugdspdy"]
+[gd_scene load_steps=8 format=3 uid="uid://dwi8srugdspdy"]
 
 [ext_resource type="Script" path="res://obstaceles/obstacel_scripts/spring_veer.gd" id="1_8qkus"]
 [ext_resource type="Texture2D" uid="uid://b0dwn7hqqdkim" path="res://obstaceles/obstacel_sprites/Jump (28x28).png" id="1_m8avu"]
@@ -44,10 +44,13 @@ _data = {
 "jump": SubResource("Animation_wrd2n")
 }
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gevmx"]
+radius = 16.0
+height = 155.035
+
 [node name="spring_veer" type="Area2D"]
-position = Vector2(0, -24)
+position = Vector2(12, -24)
 script = ExtResource("1_8qkus")
-metadata/_edit_group_ = true
 
 [node name="Jump(28x28)" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -56,14 +59,14 @@ scale = Vector2(5.96429, 2.89286)
 texture = ExtResource("1_m8avu")
 hframes = 8
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-1361, -325)
-scale = Vector2(8.0625, 4.5625)
-polygon = PackedVector2Array(159.38, 75.3973, 167.69, 75.3973, 177.612, 75.3973, 177.736, 76.9315, 176.744, 78.0274, 171.163, 79.3425, 171.163, 80.6575, 165.829, 80.4384, 165.829, 79.1233, 159.256, 77.8082, 158.76, 76.4932)
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_fruy7")
 }
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 26)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_gevmx")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
