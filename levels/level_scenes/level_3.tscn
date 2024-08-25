@@ -21,9 +21,9 @@ layer_0/tile_data = PackedInt32Array(851974, 458752, 0, 851973, 458752, 0, 85197
 position = Vector2(331, 562)
 
 [node name="spring_veer" parent="." instance=ExtResource("3_terhp")]
-position = Vector2(-142, 608)
+position = Vector2(-138, 609)
 rotation = 1.56972
-spring_power = 100000
+spring_power = 99999
 
 [node name="level_3_spikes" type="Node" parent="."]
 
