@@ -12,15 +12,17 @@ var double_jump :int = 0
 
 var state :String = "fall" # states: idle run jump fall
 
+var preVelocity :Vector2 = Vector2.ZERO
+
 func _physics_process(delta):
 	if velocity.x > 0:
 		$Sprite2D.flip_h = false
 	elif velocity.x < 0:
 		$Sprite2D.flip_h = true
-	# Add the gravity.
+
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	
+
 	if is_on_floor():
 		double_jump = 1
 	
@@ -32,9 +34,8 @@ func _physics_process(delta):
 		elif double_jump == 1:
 			double_jump = 0
 			velocity.y = JUMP_VELOCITY
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("ui_left", "ui_right")
+
+	var direction = Input.get_axis("links", "rechts")
 	if direction:
 		velocity.x = direction * SPEED
 		if velocity.y == 0:
@@ -56,17 +57,19 @@ func _physics_process(delta):
 	
 	if velocity.x == 0 and velocity.y == 0:
 		state = "idle"
-	
+
 	animation_handler(state)
-	
+
 	move_and_slide()
-	
+
 	if $Sprite2D.position[1] > 400.0:
 		get_tree().change_scene_to_file("res://game_over.tscn")
 	elif Input.is_action_just_pressed("stop"):
 		get_tree().quit(3)
+	
+	preVelocity = velocity
 
-func animation_handler(state):
+func animation_handler(state:String) -> void:
 	if state == "idle":
 		$Sprite2D.play("idle")
 	elif state == "run":
@@ -76,7 +79,7 @@ func animation_handler(state):
 	elif state == "fall":
 		$Sprite2D.play("fall")
 
-func player():
+func player() -> void:
 	pass
 
 func spring(power: float, direction: float) -> void:
