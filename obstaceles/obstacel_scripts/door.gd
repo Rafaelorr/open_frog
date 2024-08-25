@@ -3,7 +3,7 @@ extends Area2D
 var entered :bool = false
 @export var connected_scene_file_path : String
 @export var Open : bool = true
-var scene_folder = "res://levels/"
+var scene_folder = "res://levels/level_scenes/"
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
