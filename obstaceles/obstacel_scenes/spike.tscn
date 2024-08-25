@@ -22,6 +22,10 @@ texture = ExtResource("1_fvjrm")
 position = Vector2(-0.5, 10)
 shape = SubResource("RectangleShape2D_wep5k")
 
-[node name="Marker2D" type="Marker2D" parent="."]
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(-0.5, 10)
+scale = Vector2(2.25, 0.8)
+enable_mode = 1
+enable_node_path = NodePath("../sprite")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
