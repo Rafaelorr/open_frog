@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c6ylt450vksp0"]
+
+[node name="eind_bericht" type="Label"]
+offset_left = 4341.0
+offset_top = -685.0
+offset_right = 4381.0
+offset_bottom = -662.0
+text = "Je bent klaar met mijn spel.
+Wat vondt je er van ?"
