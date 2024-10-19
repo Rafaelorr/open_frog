@@ -5,22 +5,20 @@ var entered :bool = false
 @export var Open : bool = true
 var scene_folder = "res://levels/level_scenes/"
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if entered:
-		if Open:
-			var full_path = scene_folder + connected_scene_file_path + ".tscn"
-			get_tree().change_scene_to_file(full_path)
-		else:
-			if Global.aantal_sleutels > 0:
-				Open = true
-				Global.aantal_sleutels -= 1
+	if entered and Open:
+        var full_path :String = scene_folder + connected_scene_file_path + ".tscn"
+		get_tree().change_scene_to_file(full_path)
+		ResourceLoader.load(full_path, "PackedScene", ResourceLoader.CACHE_MODE_REUSE)
+	elif entered and Global.aantal_sleutels > 0:
+		Open = true
+		Global.aantal_sleutels -= 1
 
 func _on_body_entered(body: CharacterBody2D):
-	if body.has_method("player"):
+	if body is speler:
 		entered = true
 
 
 func _on_body_exited(body):
-	if body.has_method("player"):
+	if body is speler:
 		entered = false
