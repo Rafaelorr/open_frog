@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dre2w5cpxgf4m"]
+[gd_scene load_steps=10 format=3 uid="uid://dre2w5cpxgf4m"]
 
 [ext_resource type="Script" path="res://levels/level_setup_scripts/level_3_setup.gd" id="1_ijl51"]
 [ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set.tscn" id="1_xui2f"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://puxttfdsnrx4" path="res://obstaceles/obstacel_scenes/door.tscn" id="5_iie75"]
 [ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://menu/ui/ui_elements/munt_counter.tscn" id="6_uu6it"]
 [ext_resource type="PackedScene" uid="uid://b0c7uasfnhqlr" path="res://menu/ui/ui_elements/sleutel_counter.tscn" id="7_bf80o"]
+[ext_resource type="PackedScene" uid="uid://c2nkqwdv6cu8u" path="res://menu/ui/ui_elements/fps_counter.tscn" id="9_2d06g"]
 
 [node name="level_3" type="Node2D"]
 script = ExtResource("1_ijl51")
@@ -289,3 +290,5 @@ connected_scene_file_path = "level_4"
 [node name="munt_counter" parent="." instance=ExtResource("6_uu6it")]
 
 [node name="sleutel_counter" parent="." instance=ExtResource("7_bf80o")]
+
+[node name="fps_counter" parent="." instance=ExtResource("9_2d06g")]

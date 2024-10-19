@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://eovqbxebibym"]
+[gd_scene load_steps=9 format=3 uid="uid://eovqbxebibym"]
 
 [ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set.tscn" id="1_rpgs8"]
 [ext_resource type="Script" path="res://levels/level_setup_scripts/level_5_setup.gd" id="1_sqhyk"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b0c7uasfnhqlr" path="res://menu/ui/ui_elements/sleutel_counter.tscn" id="4_60s5a"]
 [ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://menu/ui/ui_elements/munt_counter.tscn" id="5_vpusf"]
 [ext_resource type="PackedScene" uid="uid://b8eqcu50kco4u" path="res://obstaceles/obstacel_scenes/munt.tscn" id="6_sbtkk"]
+[ext_resource type="PackedScene" uid="uid://c2nkqwdv6cu8u" path="res://menu/ui/ui_elements/fps_counter.tscn" id="8_i2g8j"]
 
 [node name="level_5" type="Node2D"]
 script = ExtResource("1_sqhyk")
@@ -2156,3 +2157,5 @@ offset_right = 4381.0
 offset_bottom = -662.0
 text = "Je bent klaar met mijn spel.
 Wat vondt je er van ?"
+
+[node name="fps_counter" parent="." instance=ExtResource("8_i2g8j")]
