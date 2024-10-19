@@ -7,7 +7,7 @@ var scene_folder = "res://levels/level_scenes/"
 
 func _process(_delta):
 	if entered and Open:
-        var full_path :String = scene_folder + connected_scene_file_path + ".tscn"
+		var full_path :String = scene_folder + connected_scene_file_path + ".tscn"
 		get_tree().change_scene_to_file(full_path)
 		ResourceLoader.load(full_path, "PackedScene", ResourceLoader.CACHE_MODE_REUSE)
 	elif entered and Global.aantal_sleutels > 0:
