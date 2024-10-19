@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://eovqbxebibym"]
+[gd_scene load_steps=10 format=3 uid="uid://eovqbxebibym"]
 
 [ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set.tscn" id="1_rpgs8"]
 [ext_resource type="Script" path="res://levels/level_setup_scripts/level_5_setup.gd" id="1_sqhyk"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://menu/ui/ui_elements/munt_counter.tscn" id="5_vpusf"]
 [ext_resource type="PackedScene" uid="uid://b8eqcu50kco4u" path="res://obstaceles/obstacel_scenes/munt.tscn" id="6_sbtkk"]
 [ext_resource type="PackedScene" uid="uid://c2nkqwdv6cu8u" path="res://menu/ui/ui_elements/fps_counter.tscn" id="8_i2g8j"]
+[ext_resource type="PackedScene" uid="uid://puxttfdsnrx4" path="res://obstaceles/obstacel_scenes/door.tscn" id="9_2kjs5"]
 
 [node name="level_5" type="Node2D"]
 script = ExtResource("1_sqhyk")
@@ -2150,12 +2151,8 @@ position = Vector2(3244, -1662)
 [node name="munt533" parent="level_5_munten" instance=ExtResource("6_sbtkk")]
 position = Vector2(3292, -1662)
 
-[node name="Label" type="Label" parent="."]
-offset_left = 4341.0
-offset_top = -685.0
-offset_right = 4381.0
-offset_bottom = -662.0
-text = "Je bent klaar met mijn spel.
-Wat vondt je er van ?"
-
 [node name="fps_counter" parent="." instance=ExtResource("8_i2g8j")]
+
+[node name="door" parent="." instance=ExtResource("9_2kjs5")]
+position = Vector2(4051, -580)
+connected_scene_file_path = "level_6"
