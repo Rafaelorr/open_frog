@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://o5qrxccwka62"]
+[gd_scene load_steps=12 format=3 uid="uid://o5qrxccwka62"]
 
 [ext_resource type="Script" path="res://levels/level_setup_scripts/level_1_setup.gd" id="1_tus7s"]
 [ext_resource type="PackedScene" uid="uid://d3fpy0d3vhx5m" path="res://speler/player.tscn" id="2_1bd68"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://b0o30xguismiu" path="res://obstaceles/obstacel_scenes/moving_plaformer.tscn" id="4_o644x"]
 [ext_resource type="PackedScene" uid="uid://puxttfdsnrx4" path="res://obstaceles/obstacel_scenes/door.tscn" id="5_n2ri2"]
 [ext_resource type="PackedScene" uid="uid://bs4wd5gcjv4cf" path="res://obstaceles/obstacel_scenes/onewayplaform.tscn" id="6_p8qsr"]
-[ext_resource type="PackedScene" uid="uid://b8eqcu50kco4u" path="res://obstaceles/obstacel_scenes/munt.tscn" id="7_bfld8"]
 [ext_resource type="PackedScene" uid="uid://us83hbjiihe7" path="res://obstaceles/obstacel_scenes/spike.tscn" id="8_xegve"]
 [ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://menu/ui/ui_elements/munt_counter.tscn" id="9_hu4o0"]
 [ext_resource type="PackedScene" uid="uid://b0c7uasfnhqlr" path="res://menu/ui/ui_elements/sleutel_counter.tscn" id="10_81sql"]
@@ -69,9 +68,6 @@ scale = Vector2(3.06383, 2.27392)
 [node name="onewayplaform4" parent="level_1_onewayplaforms" instance=ExtResource("6_p8qsr")]
 position = Vector2(1078.5, 369)
 scale = Vector2(3.04261, 1.96143)
-
-[node name="munt" parent="." instance=ExtResource("7_bfld8")]
-position = Vector2(538, 439)
 
 [node name="Label" type="Label" parent="."]
 offset_left = 3082.0
