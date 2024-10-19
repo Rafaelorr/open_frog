@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://gkm288ughsr8"]
+
+[ext_resource type="Texture2D" uid="uid://ykhc5q8ae22y" path="res://obstaceles/obstacel_sprites/Dust Particle.png" id="1_63rgt"]
+[ext_resource type="Script" path="res://particel_test.gd" id="2_vn8t1"]
+
+[node name="CPUParticles2D" type="CPUParticles2D"]
+z_index = 4096
+z_as_relative = false
+y_sort_enabled = true
+texture_filter = 1
+rotation = -1.5708
+amount = 3
+lifetime = 2.0
+explosiveness = 0.59
+fixed_fps = 60
+fract_delta = false
+draw_order = 1
+texture = ExtResource("1_63rgt")
+direction = Vector2(0, 0)
+spread = 30.0
+gravity = Vector2(0, 20)
+initial_velocity_min = 15.0
+initial_velocity_max = 40.0
+script = ExtResource("2_vn8t1")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
