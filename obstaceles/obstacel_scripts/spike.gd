@@ -8,7 +8,7 @@ func _process(_delta):
 		get_tree().change_scene_to_file("res://menu/menu_scenes/game_over.tscn")
 
 func _on_area_2d_body_entered(body):
-	if body.has_method("player"):
+	if body is speler:
 		player_in_area = true
 
 func wait(seconds: float) -> void:
