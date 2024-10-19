@@ -1,4 +1,4 @@
-extends Label
+extends CanvasLayer
 
-func _process(_delta) -> void:
-	print(Engine.get_frames_per_second())
+func _process(delta):
+	$Label.text = "Fps: %d" % Engine.get_frames_per_second()
