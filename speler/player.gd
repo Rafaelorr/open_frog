@@ -11,7 +11,6 @@ var double_jump :int = 0
 @export var gravity :float = 980.0
 
 var state :String = "fall" # states: idle run jump fall
-
 var preVelocity :Vector2 = Vector2.ZERO
 
 func _physics_process(delta):
@@ -45,15 +44,19 @@ func _physics_process(delta):
 		if velocity.y == 0:
 			state = "run"
 	
-	if slow_fall:
-		if velocity.y > 200.0:
-			velocity.y = 200.0
+	if slow_fall and velocity.y > 200.0:
+		velocity.y = 200.0
 	
 	if velocity.y < 0:
 		state = "jump"
 	
 	if velocity.y > 0:
 		state = "fall"
+	
+	#if state == "fall" and velocity.y < 20:
+		#var scene = preload("res://particel_test.tscn")
+		#var instance = scene.instantiate()
+		#add_child(instance)
 	
 	if velocity.x == 0 and velocity.y == 0:
 		state = "idle"
@@ -62,9 +65,7 @@ func _physics_process(delta):
 
 	move_and_slide()
 
-	if $Sprite2D.position[1] > 400.0:
-		get_tree().change_scene_to_file("res://game_over.tscn")
-	elif Input.is_action_just_pressed("stop"):
+	if Input.is_action_just_pressed("stop"):
 		get_tree().quit(3)
 	
 	preVelocity = velocity
@@ -78,9 +79,6 @@ func animation_handler(state:String) -> void:
 		$Sprite2D.play("run")
 	elif state == "fall":
 		$Sprite2D.play("fall")
-
-func player() -> void:
-	pass
 
 func spring(power: float, direction: float) -> void:
 	velocity.x = velocity.x - cos(direction) * power
