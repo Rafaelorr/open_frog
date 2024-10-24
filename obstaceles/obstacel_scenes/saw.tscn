@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://cyx4obd1vhc4r"]
 
-[ext_resource type="Script" path="res://saw.gd" id="1_kjf8m"]
-[ext_resource type="Texture2D" uid="uid://dthcu4xxnxva6" path="res://saw (38x38).png" id="1_yssgw"]
+[ext_resource type="Script" path="res://obstaceles/obstacel_scripts/saw.gd" id="1_kjf8m"]
+[ext_resource type="Texture2D" uid="uid://dthcu4xxnxva6" path="res://obstaceles/obstacel_sprites/saw (38x38).png" id="1_yssgw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_27ksy"]
 atlas = ExtResource("1_yssgw")
