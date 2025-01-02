@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://gkm288ughsr8"]
 
 [ext_resource type="Texture2D" uid="uid://ykhc5q8ae22y" path="res://obstaceles/obstacel_sprites/Dust Particle.png" id="1_63rgt"]
-[ext_resource type="Script" path="res://particel_test.gd" id="2_vn8t1"]
+[ext_resource type="Script" path="res://andere/scripts/particel_test.gd" id="2_vn8t1"]
 
 [node name="CPUParticles2D" type="CPUParticles2D"]
 z_index = 4096

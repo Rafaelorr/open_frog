@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://doobpqidhk84x"]
 
-[ext_resource type="Script" path="res://Death_plain.gd" id="1_vnb5i"]
+[ext_resource type="Script" path="res://andere/scripts/Death_plain.gd" id="1_vnb5i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ee0py"]
-size = Vector2(11608, 146)
+size = Vector2(1e+08, 200)
 
 [node name="DeathPlain" type="Node2D"]
 script = ExtResource("1_vnb5i")
@@ -11,7 +11,7 @@ script = ExtResource("1_vnb5i")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(3, -2)
+position = Vector2(-3, 2)
 shape = SubResource("RectangleShape2D_ee0py")
 debug_color = Color(0.156275, 0.621725, 0.490615, 0.42)
 
