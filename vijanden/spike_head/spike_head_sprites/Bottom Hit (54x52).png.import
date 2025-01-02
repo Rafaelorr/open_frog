@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tls3fw3ox5st"
-path="res://.godot/imported/Right Hit (54x52).png-47d5e21f5abbc016625fd64e29841437.ctex"
+uid="uid://djfifmr40kg2k"
+path="res://.godot/imported/Bottom Hit (54x52).png-9cc0869cabf572def3d404c6f20748b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Right Hit (54x52).png"
-dest_files=["res://.godot/imported/Right Hit (54x52).png-47d5e21f5abbc016625fd64e29841437.ctex"]
+source_file="res://vijanden/spike_head/spike_head_sprites/Bottom Hit (54x52).png"
+dest_files=["res://.godot/imported/Bottom Hit (54x52).png-9cc0869cabf572def3d404c6f20748b5.ctex"]
 
 [params]
 

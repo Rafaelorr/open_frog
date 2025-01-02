@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ivln8ju0gws"
-path="res://.godot/imported/Left Hit (54x52).png-f4c8fa185772605ccd7210bcab75cfdf.ctex"
+path="res://.godot/imported/Left Hit (54x52).png-e08d7f3d91c7052fef78c97b56fad6e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Left Hit (54x52).png"
-dest_files=["res://.godot/imported/Left Hit (54x52).png-f4c8fa185772605ccd7210bcab75cfdf.ctex"]
+source_file="res://vijanden/spike_head/spike_head_sprites/Left Hit (54x52).png"
+dest_files=["res://.godot/imported/Left Hit (54x52).png-e08d7f3d91c7052fef78c97b56fad6e4.ctex"]
 
 [params]
 

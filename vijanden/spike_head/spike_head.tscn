@@ -1,9 +1,9 @@
 [gd_scene load_steps=18 format=3 uid="uid://chlqlu15jaeqw"]
 
-[ext_resource type="Texture2D" uid="uid://cj1jgpb7sa2pg" path="res://Blink (54x52).png" id="1_uxfeo"]
-[ext_resource type="Texture2D" uid="uid://djfifmr40kg2k" path="res://Bottom Hit (54x52).png" id="2_bu13p"]
-[ext_resource type="Texture2D" uid="uid://d0b46l4jvmujs" path="res://Idle.png" id="3_sdgib"]
-[ext_resource type="Script" path="res://spike_head.gd" id="7_pm1go"]
+[ext_resource type="Texture2D" uid="uid://cj1jgpb7sa2pg" path="res://vijanden/spike_head/spike_head_sprites/Blink (54x52).png" id="1_uxfeo"]
+[ext_resource type="Texture2D" uid="uid://djfifmr40kg2k" path="res://vijanden/spike_head/spike_head_sprites/Bottom Hit (54x52).png" id="2_bu13p"]
+[ext_resource type="Texture2D" uid="uid://d0b46l4jvmujs" path="res://vijanden/spike_head/spike_head_sprites/Idle.png" id="3_sdgib"]
+[ext_resource type="Script" path="res://vijanden/spike_head/spike_head.gd" id="7_pm1go"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fvlgy"]
 atlas = ExtResource("1_uxfeo")

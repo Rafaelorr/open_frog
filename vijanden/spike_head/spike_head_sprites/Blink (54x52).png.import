@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj1jgpb7sa2pg"
-path="res://.godot/imported/Blink (54x52).png-445bc0939068cea983363c39bd28c674.ctex"
+path="res://.godot/imported/Blink (54x52).png-ce5fa1b375c220b29e1279bc7a5a06e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Blink (54x52).png"
-dest_files=["res://.godot/imported/Blink (54x52).png-445bc0939068cea983363c39bd28c674.ctex"]
+source_file="res://vijanden/spike_head/spike_head_sprites/Blink (54x52).png"
+dest_files=["res://.godot/imported/Blink (54x52).png-ce5fa1b375c220b29e1279bc7a5a06e3.ctex"]
 
 [params]
 
