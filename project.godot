@@ -19,6 +19,7 @@ config/icon="res://frog-icon-35-1533870457.png"
 
 Global="*res://global.gd"
 PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
+GlobalTimer="*res://andere/scripts/timer.gd"
 
 [display]
 

@@ -1,5 +1,5 @@
-class_name speler
 extends CharacterBody2D
+class_name speler
 
 @export var SPEED :float = 300.0
 @export var JUMP_VELOCITY :float = -600.0
