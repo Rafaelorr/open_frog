@@ -6,13 +6,15 @@
 script = ExtResource("1_y5guy")
 
 [node name="Game_titel" type="Label" parent="."]
+texture_filter = 1
 offset_left = 539.0
 offset_top = 277.0
-offset_right = 1358.0
-offset_bottom = 354.0
-text = "Frog jump"
+offset_right = 618.0
+offset_bottom = 301.0
+text = "Open frog"
 
 [node name="start_button" type="Button" parent="."]
+texture_filter = 1
 offset_left = 754.0
 offset_top = 412.0
 offset_right = 855.0
@@ -20,6 +22,7 @@ offset_bottom = 443.0
 text = "Start"
 
 [node name="controlles_button" type="Button" parent="."]
+texture_filter = 1
 offset_left = 392.0
 offset_top = 411.0
 offset_right = 480.0

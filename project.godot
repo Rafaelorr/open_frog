@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="frog_jump"
+config/name="open frog"
 run/main_scene="res://menu/menu_scenes/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://frog-icon-35-1533870457.png"
 
 [autoload]
 
@@ -63,3 +63,8 @@ rechts={
 [phantom_camera]
 
 tips/show_jitter_tips=false
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
