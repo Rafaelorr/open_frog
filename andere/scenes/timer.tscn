@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://lr3m10fd41pq"]
+
+[ext_resource type="Script" path="res://andere/scripts/timer.gd" id="1_7462j"]
+
+[node name="timer" type="Label"]
+offset_top = 90.0
+offset_right = 40.0
+offset_bottom = 113.0
+script = ExtResource("1_7462j")

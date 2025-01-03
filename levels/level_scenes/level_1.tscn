@@ -1,8 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://o5qrxccwka62"]
+[gd_scene load_steps=13 format=3 uid="uid://o5qrxccwka62"]
 
 [ext_resource type="Script" path="res://levels/level_setup_scripts/level_1_setup.gd" id="1_tus7s"]
 [ext_resource type="PackedScene" uid="uid://d3fpy0d3vhx5m" path="res://speler/player.tscn" id="2_1bd68"]
-[ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set.tscn" id="3_tp854"]
+[ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set_en_background/tile_set.tscn" id="3_tp854"]
 [ext_resource type="PackedScene" uid="uid://b0o30xguismiu" path="res://obstaceles/obstacel_scenes/moving_plaformer.tscn" id="4_o644x"]
 [ext_resource type="PackedScene" uid="uid://puxttfdsnrx4" path="res://obstaceles/obstacel_scenes/door.tscn" id="5_n2ri2"]
 [ext_resource type="PackedScene" uid="uid://bs4wd5gcjv4cf" path="res://obstaceles/obstacel_scenes/onewayplaform.tscn" id="6_p8qsr"]
@@ -10,7 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://menu/ui/ui_elements/munt_counter.tscn" id="9_hu4o0"]
 [ext_resource type="PackedScene" uid="uid://b0c7uasfnhqlr" path="res://menu/ui/ui_elements/sleutel_counter.tscn" id="10_81sql"]
 [ext_resource type="PackedScene" uid="uid://c2nkqwdv6cu8u" path="res://menu/ui/ui_elements/fps_counter.tscn" id="11_2maee"]
-[ext_resource type="PackedScene" uid="uid://doobpqidhk84x" path="res://Death_plain.tscn" id="12_fpldd"]
+[ext_resource type="PackedScene" uid="uid://bcolg27q55fej" path="res://andere/scenes/ui_timer.tscn" id="12_3fx3m"]
+[ext_resource type="PackedScene" uid="uid://doobpqidhk84x" path="res://andere/scenes/Death_plain.tscn" id="12_fpldd"]
 
 [node name="level_1" type="Node"]
 script = ExtResource("1_tus7s")
@@ -205,3 +206,5 @@ position = Vector2(2611.73, 1277)
 
 [node name="DeathPlain" parent="." instance=ExtResource("12_fpldd")]
 position = Vector2(1880, 1677)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("12_3fx3m")]

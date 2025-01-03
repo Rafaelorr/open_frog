@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://cfbqc0gn8fc1m"]
+[gd_scene load_steps=12 format=3 uid="uid://cfbqc0gn8fc1m"]
 
-[ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set.tscn" id="1_6hy12"]
+[ext_resource type="PackedScene" uid="uid://diouo64nejlsf" path="res://tile_set_en_background/tile_set.tscn" id="1_6hy12"]
 [ext_resource type="Script" path="res://levels/level_setup_scripts/level_4_setup.gd" id="1_eb1kw"]
 [ext_resource type="PackedScene" uid="uid://d3fpy0d3vhx5m" path="res://speler/player.tscn" id="2_bj7an"]
 [ext_resource type="PackedScene" uid="uid://dwi8srugdspdy" path="res://obstaceles/obstacel_scenes/spring_veer.tscn" id="3_g6d8h"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b0c7uasfnhqlr" path="res://menu/ui/ui_elements/sleutel_counter.tscn" id="7_x1tyv"]
 [ext_resource type="PackedScene" uid="uid://df3v484g282qh" path="res://menu/ui/ui_elements/munt_counter.tscn" id="8_lj0pw"]
 [ext_resource type="PackedScene" uid="uid://c2nkqwdv6cu8u" path="res://menu/ui/ui_elements/fps_counter.tscn" id="10_mdws0"]
+[ext_resource type="PackedScene" uid="uid://bcolg27q55fej" path="res://andere/scenes/ui_timer.tscn" id="11_ejc8f"]
 
 [node name="level_4" type="Node2D"]
 script = ExtResource("1_eb1kw")
@@ -277,3 +278,5 @@ connected_scene_file_path = "level_5"
 [node name="munt_counter" parent="." instance=ExtResource("8_lj0pw")]
 
 [node name="fps_counter" parent="." instance=ExtResource("10_mdws0")]
+
+[node name="CanvasLayer" parent="." instance=ExtResource("11_ejc8f")]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcolg27q55fej"]
+
+[ext_resource type="PackedScene" uid="uid://lr3m10fd41pq" path="res://andere/scenes/timer.tscn" id="1_e5h2v"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="timer" parent="." instance=ExtResource("1_e5h2v")]
+offset_top = 108.0
+offset_bottom = 131.0
