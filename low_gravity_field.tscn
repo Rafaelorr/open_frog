@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://l78febbvpao2"]
+
+[ext_resource type="Script" path="res://low_gravity_field.gd" id="1_kavkv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmhr7"]
+size = Vector2(1862.62, 1654)
+
+[node name="LowGravityField" type="Node2D"]
+script = ExtResource("1_kavkv")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="Area2D"]
+visibility_layer = 4
+z_index = 4096
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_lmhr7")
+debug_color = Color(0.653822, 0.495364, 0.421842, 0.42)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
